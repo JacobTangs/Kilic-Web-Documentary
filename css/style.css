@@ -1,36 +1,24 @@
-html{
-}
-body{
+root{--strong-color: #00b100;}
+html, body{
     margin: 0;
     padding: 0;
+    color: #323232;
     box-sizing: border-box;
 }
-.forside video{
+header video{
     max-width: 100%;
     max-height: 100%;
+    z-index: -100;
+    position: fixed;
+    background-size: cover;
+    transition: 1s opacity;
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
+header img{
+    margin-top: 100vh;
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+section{
+    position: absolute;
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 1024px and up) */
-@media only screen and (min-width: 1024px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+.strong{
+    color: #00b100;
 }
