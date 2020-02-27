@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,98 @@
     <meta name="description" content="Dette er en web documentary">
     <title>kilic web decumentary</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
 </head>
 
 <body>
-    <header>
-        <video autoplay muted loop id="splash" class="scroll">
-            <source src="kilic-video.mp4" type="video/mp4">
-        </video>
-         <img src="images/sort-banner.svg" alt="">
-    </header>
-
-
     <main>
-        <section>
-            <p>”Mit navn er Mustafa Kilic, i 1997 startede jeg i Bazar Vest og nu har jeg <strong class="strong">Kilic Marked</strong>. Det vigtigste for mig er <strong class="strong">kvalitet</strong>, for hvis jeg ikke selv kan spise mine varer, så vil jeg ikke sælge dem.”</p>
-            <img src="images/" alt="Dette er Mustafa Kilic">
+        <!-- SECTION VIDEO START -->
+        <section class="video">
+            <video autoplay muted loop>
+                <source src="kilic-video.mp4" type="video/mp4">
+            </video>
+        </section>
+        <!-- SECTION VIDEO END -->
+
+
+        <!-- SECTION INTRODUCTION START -->
+        <section class="introduction">
+            <div>
+                <p>”Mit navn er Mustafa Kilic, i 1997 startede jeg i Bazar Vest og nu har jeg <strong>Kilic Marked</strong>. Det vigtigste for mig er <strong>kvalitet</strong>, for hvis jeg ikke selv kan spise mine varer, så vil jeg ikke sælge dem.”</p>
+                   </div>
+
+                <video autoplay muted loop>
+                    <source class="video" src="mustafa(77).mp4" type="video/mp4">
+                </video>
+
+        </section>
+        <!-- SECTION INTRODUCTION END -->
+
+        <!-- SECTION ØKOLOGI START -->
+        <section class="okologi">
+            <div class="tre-ikoner">
+                <img id="noegle" src="images/noegle.png" alt="Nøglehulsmærket">
+                <img id="oeko" src="images/oeko.png" alt="Økologi mærket">
+                <img id="vegan" src="images/vegan.png" alt="Vegetar mærket">
+            </div>
+            <p>”Lige siden jeg flyttede til Danmark har jeg altid ønsket at sælge <span>økologiske vare</span>. De sidste tre år har efterspørgslen på økologi steget - folk vil generelt gerne <span>spise sundere</span> og passe på deres <span>helbred.</span> Derfor er ca. 40% af mine varer økologiske.”</p>
+        </section>
+        <!-- SECTION ØKOLOGI END -->
+
+        <!-- verdenskort start -->
+
+
+
+        <section class="verdenskort">
+        <img src="images/kort.png" alt="Verdenskort">
+        <p>”Jeg køber varer ind fra <span>40 lande</span>, og jeg har mit eget risteri, så jeg kan sørge for, at produktet lever op til den <span>standard</span>, som jeg forventer. Hos <span>Kilic</span> kan du finde et udsøgt sortiment af kvalitet fra hele verden til en <span>lav pris.</span>”</p>
+
         </section>
 
+        <!-- SECTION SLIDESHOW START -->
+        <div class="slideshow">
+            <button id="tilbage"><img src="images/pil-left.svg" id="tilbage" alt="pil til venstre"></button>
+            <img src="images/kiosk.jpg" alt="Slideshow image" id="slidebillede">
+            <button id="frem"><img src="images/pil-right.svg" alt="pil til højre"></button>
+        </div>
+        <!-- SECTION SLIDESHOW END -->
 
-
-
-
-
-
-
-
+         <div class="layout">
+         <button id="spil">Tryk for stemning</button>
+         <button id="mute">Stop stemning</button>
+    </div>
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <img src="images/kilic-logo.png" alt="Kilics logo">
+        <article>
+        <section>
+            <h3>ÅBNINGSTIDER</h3>
+            <p>Mandag: Lukket</p>
+            <p>Tirsdag-fredag: 10-18</p>
+            <p>Lørdag-søndag: 10-18</p>
+
+        </section>
+        <section>
+            <h3>KONTAKT</h3>
+            <p>mail@kilicmarked.dk</p>
+            <p>Tlf. +45 86 25 66 40</p>
+            <p>Fax +45 86 25 66 80</p>
+        </section>
+        <section>
+            <h3>Læs mere</h3>
+            <p><a href="#">Forside</a></p>
+            <p><a href="#">Produkter</a></p>
+            <p><a href="#">Opskrifter</a></p>
+        </section>
+        </article>
+        <section class="adresse">
+        <h3>KILIC MARKED ApS | Edwin Rahrs Vej 32 | 8220 Brabrand</h3>
+        <h5>Copyright 2020 KILIC MARKED ApS. All Rights Reserved.</h5>
+        </section>
+    </footer>
+<script src="js/javascript.js"></script>
 
 </body>
-<script></script></html>
+</html>
